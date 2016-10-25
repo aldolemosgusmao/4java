@@ -1,3 +1,5 @@
+package br.com.4java.Exercicios;
+
 public class Lampada{
     boolean status;
 
