@@ -11,6 +11,7 @@ package exerciciolampada;
  */
 public class ExercicioLampada {
     boolean status;
+    String nome;
     public boolean acender (){
         status = true;
         System.out.println("A Lâmpada está acesa!");
@@ -22,13 +23,30 @@ public class ExercicioLampada {
         System.out.println("A lâmpada está apagada!");
         return status;
     }
+    public boolean alterarStatus (boolean status){
+        if (status == true){
+            status = false;
+            System.out.println("Foi alterado para apagada");
+        }else{
+            status = true;
+            System.out.println("Foi alterado para acesa");
+        }
+        return status;
+    }
     public static void main(String[] args) {
         
         
         ExercicioLampada L1 = new ExercicioLampada();
         ExercicioLampada L2 = new ExercicioLampada ();
+        L1.nome = "do quarto";
+        L2.nome = "da sala";
         L1.acender();
         L2.apagar();
+        System.out.println("Estado da Lâmpada "+L1.nome+": ");
+        L1.alterarStatus(true);
+        System.out.println("Estado da Lâmpada "+L2.nome+": ");
+        L2.alterarStatus(true);
+        
         
         
         
