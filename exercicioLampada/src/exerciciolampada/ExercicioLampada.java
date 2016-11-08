@@ -47,6 +47,14 @@ public class ExercicioLampada {
         System.out.println("Estado da Lâmpada "+L2.nome+": ");
         L2.alterarStatus(true);
         
+        Tv teve1 = new Tv();
+        
+        teve1.marca = "Toshiba";
+        teve1.polegadas = "42";
+        teve1.wifi = true;
+        
+        
+        System.out.println(teve1.getDono());
         
         
         
