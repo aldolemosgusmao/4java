@@ -13,6 +13,6 @@ public static void main ( String[] args){
     NotaPort = entrada.nextDouble();
     System.out.println ("Digite o nota de Matemática.");
     NotaMat = entrada.nextDouble();
-    System.out.println ("O nome do aluno � "+Nome+", a nota em Portugês: "+NotaPort + ", a nota em Matemática: "+NotaMat);
+    System.out.println ("O nome do aluno � "+ Nome +", a nota em Portugês: "+ NotaPort + ", a nota em Matemática: "+ NotaMat);
     }
 }
