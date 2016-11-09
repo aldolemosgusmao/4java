@@ -2,7 +2,12 @@ import java.util.Scanner;
 public class PrimeiraClasse{
 public static void main ( String[] args){
     Diario portugues = new Diario();
-    System.out.println ("mediaPort");
+    System.out.println (portugues.mediaPort);
+    System.out.println (mediaPort);
+    System.out.println (portugues.nota1);
+    System.out.println (nota1);
+    System.out.println (portugues.nota2);
+    System.out.println (nota2);
     Scanner entrada = new Scanner (System.in);
     String Nome;
     double NotaPort;
