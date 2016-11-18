@@ -1,7 +1,0 @@
-class conta {
-Strig nome;
-int numero;
-double salario;
-double limite;
-
-}

@@ -1,0 +1,7 @@
+class Conta {
+String dono;
+int numero;
+double saldo;
+double limite;
+
+}
