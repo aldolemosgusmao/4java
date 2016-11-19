@@ -17,5 +17,23 @@ class Programa {
 
         //Sacar 2000 reais
         minhaConta.saca(2000);
+
+        Conta outraConta =  new Conta ();
+        outraConta = minhaConta;
+
+        System.out.println (minhaConta.saldo);
+        outraConta.deposita(100);
+        System.out.println (outraConta.saldo);
+
+        outraConta.dono = "Jose";
+
+        //Por ter sido atribuído o mesmo valor de referências para a variáveis esta forma de comparação induzirá a um erro, pois não está comparando o conteúdo.  Veja abaixo
+        if (outraConta.dono == minhaConta.dono){
+            System.out.println ("Os valores são iguais.");
+            System.out.println (minhaConta.dono + "eh igual a " + outraConta.dono + "?!");
+        }
+
+        System.out.println ("Saldo de "+ minhaConta.dono + "eh de " + minhaConta.saldo);
+        System.out.println ("Saldo de "+ outraConta.dono + "eh de " + outraConta.saldo);
 	}
 }

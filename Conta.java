@@ -25,5 +25,17 @@ boolean saca (double quantidade){
         System.out.println ("Saque efetuado com sucesso!");
         return true;
     }
+
+boolean transfere (Conta destino, double quantidade){
+    if (this.saldo < quantidade){
+        System.out.println ("Saldo insuficiente!");
+        return false;
+    }else {
+        this.saldo = this.saldo - quantidade;
+        destino.saldo = destino.saldo + quantidade;
+        System.out.println ("Transferência efetuada como sucesso!");
+        return true;
+    }
+}
 }
 }
