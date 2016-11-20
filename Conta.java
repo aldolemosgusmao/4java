@@ -3,7 +3,7 @@ String dono;
 int numero;
 double saldo;
 double limite;
-
+Cliente titutar;
 
 //Criação do método para saque de dinheiro
 /*void saca (double quantidade){
@@ -25,8 +25,9 @@ boolean saca (double quantidade){
         System.out.println ("Saque efetuado com sucesso!");
         return true;
     }
+}
 
-boolean transfere (Conta destino, double quantidade){
+boolean transfere (Conta destino, double quantidade) {
     if (this.saldo < quantidade){
         System.out.println ("Saldo insuficiente!");
         return false;
@@ -36,6 +37,5 @@ boolean transfere (Conta destino, double quantidade){
         System.out.println ("Transferência efetuada como sucesso!");
         return true;
     }
-}
 }
 }

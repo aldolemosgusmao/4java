@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Programa {
 	public static void main (String[] args){
 		System.out.println ("Olah");
@@ -35,5 +37,33 @@ class Programa {
 
         System.out.println ("Saldo de "+ minhaConta.dono + "eh de " + minhaConta.saldo);
         System.out.println ("Saldo de "+ outraConta.dono + "eh de " + outraConta.saldo);
+
+
+        Cliente c = new Cliente ();
+      
+        c.nome = "Aldo";
+        c.sobrenome = "Lemos Gusmão";
+        c.cpf = "999.999.999-99";
+        System.out.println (c.nome + c.sobrenome + c.cpf);
+
+        //
+        System.out.println("/n");
+        System.out.println("/n");
+        System.out.println("Programa de dados de FUNCIONARIOS");
+        Funcionario a = new Funcionario ();
+        a.nome = "Silva";
+        a.departamento = "ADM";
+        a.dataEntrada = "02/01/2016";
+        a.rg = "999999";
+        a.salario = 1000.00;
+
+        a.calculaGanhoAnual ();
+        Scanner num = new Scanner (System.in);
+        System.out.println ("Informe o valor percentual que deseja aumentar o salario do funcionario.");
+        double entrada = num.nextDouble();
+        a.recebeAumento (entrada);
+
+
+
 	}
 }
